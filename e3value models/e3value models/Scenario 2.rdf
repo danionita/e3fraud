@@ -1,0 +1,1181 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://www.cs.vu.nl/~gordijn/e3value#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:a="&a;">
+<a:value_object rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#0"
+	 a:e3_has_name="MONEY"
+	 a:e3_has_uid="0">
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#102"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#103"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#108"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#109"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#26"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#31"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#47"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#75"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#79"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#85"/>
+</a:value_object>
+<a:e3value_AND rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#1"
+	 a:e3_has_name="and1"
+	 a:e3_has_uid="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#69"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#70"/>
+</a:e3value_AND>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#100"
+	 a:e3_has_name="vi100"
+	 a:e3_has_uid="100">
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#118"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#119"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#131"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#22"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_interface>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#102"
+	 a:e3_has_formula="VALUATION=0"
+	 a:e3_has_name="vp88"
+	 a:e3_has_uid="102"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="0">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#110"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#119"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#103"
+	 a:e3_has_formula="EXPENSES=0.80"
+	 a:e3_has_name="vp89"
+	 a:e3_has_uid="103"
+	 a:vp_has_dir="true">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#111"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#118"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_port>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#104"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="104">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#106"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#109"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#105"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="105">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#106"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#108"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#106"
+	 a:e3_has_name="vi106"
+	 a:e3_has_uid="106">
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#104"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#105"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#59"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+</a:value_interface>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#108"
+	 a:e3_has_formula="VALUATION=0.80"
+	 a:e3_has_name="vp105"
+	 a:e3_has_uid="108"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="0.80">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#105"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#111"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#109"
+	 a:e3_has_formula="EXPENSES=0.20"
+	 a:e3_has_name="vp106"
+	 a:e3_has_uid="109"
+	 a:vp_has_dir="true">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#104"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#110"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#11"
+	 a:e3_has_name="vp11"
+	 a:e3_has_uid="11"
+	 a:vp_has_dir="true">
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#114"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#13"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+</a:value_port>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#110"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Charge fromexpensive number"
+	 a:e3_has_uid="110">
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#102"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#109"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#111"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Payment"
+	 a:e3_has_uid="111">
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#103"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#108"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#112"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="112">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#29"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#32"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#113"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="113">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#29"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#31"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#114"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="114">
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#11"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#35"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#115"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="115">
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#17"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#35"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#116"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="116">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#76"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#79"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#117"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="117">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#76"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#78"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#118"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="118">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#100"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#103"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#119"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="119">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#100"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#102"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#12"
+	 a:e3_has_name="vp12"
+	 a:e3_has_uid="12"
+	 a:vp_has_dir="false">
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#13"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#61"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+</a:value_port>
+<a:start_stimulus rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#129"
+	 a:e3_has_formula="OCCURRENCES=334"
+	 a:e3_has_name="Need to make a call"
+	 a:e3_has_uid="129">
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#131"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:start_stimulus>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#13"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Call"
+	 a:e3_has_uid="13">
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#11"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#12"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#131"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce131"
+	 a:e3_has_uid="131"
+	 a:up_fraction="1">
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#100"/>
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#129"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:connection_element>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#14"
+	 a:e3_has_name="vp14"
+	 a:e3_has_uid="14"
+	 a:vp_has_dir="true">
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#18"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#60"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#15"
+	 a:e3_has_formula="VALUATION=0"
+	 a:e3_has_name="vp6"
+	 a:e3_has_uid="15"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="0">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#40"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#65"/>
+</a:value_port>
+<a:end_stimulus rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#158"
+	 a:e3_has_name="es158"
+	 a:e3_has_uid="158">
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#160"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:end_stimulus>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#16"
+	 a:e3_has_formula="EXPENSES=0"
+	 a:e3_has_name="vp80.12"
+	 a:e3_has_uid="16"
+	 a:vp_has_dir="true">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#39"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#62"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+</a:value_port>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#160"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce160"
+	 a:e3_has_uid="160"
+	 a:up_fraction="1">
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#158"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#83"/>
+</a:connection_element>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#17"
+	 a:e3_has_name="vp17"
+	 a:e3_has_uid="17"
+	 a:vp_has_dir="false">
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#115"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#18"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_port>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#18"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Proof of identity"
+	 a:e3_has_uid="18">
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#14"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#17"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#19"
+	 a:e3_has_name="vi19"
+	 a:e3_has_uid="19">
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#2"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#66"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#67"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#69"/>
+</a:value_interface>
+<a:elementary_actor rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#2"
+	 a:e3_has_name="User A"
+	 a:e3_has_uid="2">
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#19"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#41"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#9"/>
+	<a:e3_has_formula>EXPENSES=0</a:e3_has_formula>
+	<a:e3_has_formula>INVESTMENT=0</a:e3_has_formula>
+</a:elementary_actor>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#21"
+	 a:e3_has_name="vp6"
+	 a:e3_has_uid="21"
+	 a:vp_has_dir="false">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#67"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#86"/>
+</a:value_port>
+<a:elementary_actor rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#22"
+	 a:e3_has_name="User MM"
+	 a:e3_has_uid="22">
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#100"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#76"/>
+	<a:e3_has_formula>EXPENSES=0</a:e3_has_formula>
+	<a:e3_has_formula>INVESTMENT=0</a:e3_has_formula>
+</a:elementary_actor>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#23"
+	 a:e3_has_name="vi23"
+	 a:e3_has_uid="23">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#59"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#68"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#91"/>
+</a:value_interface>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#25"
+	 a:e3_has_name="vp22"
+	 a:e3_has_uid="25"
+	 a:vp_has_dir="false">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#57"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#91"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#26"
+	 a:e3_has_formula="EXPENSES=0.07"
+	 a:e3_has_name="vp23"
+	 a:e3_has_uid="26"
+	 a:vp_has_dir="true">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#56"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#68"/>
+</a:value_port>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#27"
+	 a:e3_has_name="vi27"
+	 a:e3_has_uid="27">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#58"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#92"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#95"/>
+</a:value_interface>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#29"
+	 a:e3_has_name="vi29"
+	 a:e3_has_uid="29">
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#112"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#113"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#49"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#8"/>
+</a:value_interface>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#31"
+	 a:e3_has_formula="VALUATION=0.07"
+	 a:e3_has_name="vp28"
+	 a:e3_has_uid="31"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="0.07">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#113"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#56"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#32"
+	 a:e3_has_name="vp29"
+	 a:e3_has_uid="32"
+	 a:vp_has_dir="true">
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#112"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#57"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#33"
+	 a:e3_has_formula="VALUATION=0"
+	 a:e3_has_name="vp22"
+	 a:e3_has_uid="33"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="0">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#39"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#95"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#34"
+	 a:e3_has_formula="EXPENSES=0"
+	 a:e3_has_name="vp23"
+	 a:e3_has_uid="34"
+	 a:vp_has_dir="true">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#40"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#92"/>
+</a:value_port>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#35"
+	 a:e3_has_name="vi35"
+	 a:e3_has_uid="35">
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#114"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#115"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#49"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#8"/>
+</a:value_interface>
+<a:diagram rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#37"
+	 a:e3_has_name="Misuse Scenario 2 - Telco"
+	 a:e3_has_uid="37">
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#1"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#100"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#102"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#103"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#104"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#105"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#106"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#108"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#109"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#11"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#110"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#111"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#112"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#113"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#114"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#115"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#116"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#117"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#118"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#119"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#12"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#129"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#13"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#131"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#14"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#15"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#158"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#16"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#160"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#17"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#18"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#19"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#2"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#21"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#22"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#23"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#25"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#26"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#27"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#29"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#31"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#32"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#33"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#34"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#35"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#38"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#39"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#40"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#41"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#44"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#45"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#47"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#48"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#49"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#50"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#52"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#53"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#55"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#56"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#57"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#58"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#59"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#60"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#61"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#62"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#64"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#65"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#66"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#67"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#68"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#69"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#70"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#73"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#74"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#75"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#76"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#78"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#79"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#8"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#80"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#81"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#82"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#83"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#85"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#86"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#87"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#88"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#89"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#9"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#90"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#91"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#92"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#93"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#94"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#95"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#96"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#97"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#98"/>
+	<a:di_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#99"/>
+</a:diagram>
+<a:start_stimulus rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#38"
+	 a:e3_has_formula="OCCURRENCES=1"
+	 a:e3_has_name="Need for subscribers"
+	 a:e3_has_uid="38">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#44"/>
+</a:start_stimulus>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#39"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Proofofsubscription"
+	 a:e3_has_uid="39">
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#16"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#33"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:model rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#4"
+	 a:e3_has_name="model4"
+	 a:e3_has_uid="4">
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#1"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#100"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#102"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#103"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#104"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#105"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#106"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#108"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#109"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#11"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#110"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#111"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#112"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#113"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#114"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#115"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#116"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#117"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#118"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#119"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#12"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#129"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#13"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#131"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#14"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#15"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#158"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#16"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#160"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#17"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#18"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#19"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#2"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#21"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#22"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#23"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#25"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#26"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#27"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#29"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#31"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#32"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#33"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#34"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#35"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#38"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#39"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#40"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#41"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#44"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#45"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#47"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#48"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#49"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#50"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#52"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#53"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#55"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#56"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#57"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#58"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#59"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#60"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#61"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#62"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#64"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#65"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#66"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#67"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#68"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#69"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#70"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#73"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#74"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#75"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#76"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#78"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#79"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#8"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#80"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#81"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#82"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#83"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#85"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#86"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#87"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#88"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#89"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#9"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#90"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#91"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#92"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#93"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#94"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#95"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#96"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#97"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#98"/>
+	<a:mo_has_mc rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#99"/>
+</a:model>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#40"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Call"
+	 a:e3_has_uid="40">
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#15"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#34"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#41"
+	 a:e3_has_name="vi41"
+	 a:e3_has_uid="41">
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#2"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#52"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#60"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#61"/>
+</a:value_interface>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#44"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce44"
+	 a:e3_has_uid="44"
+	 a:up_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#38"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#64"/>
+</a:connection_element>
+<a:start_stimulus rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#45"
+	 a:e3_has_formula="OCCURRENCES=1"
+	 a:e3_has_name="Need for connection"
+	 a:e3_has_uid="45">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#53"/>
+</a:start_stimulus>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#47"
+	 a:e3_has_formula="EXPENSES=5"
+	 a:e3_has_name="vp8"
+	 a:e3_has_uid="47"
+	 a:vp_has_dir="true">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#66"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#82"/>
+</a:value_port>
+<a:end_stimulus rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#48"
+	 a:e3_has_name="es48"
+	 a:e3_has_uid="48">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#58"/>
+</a:end_stimulus>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#49"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce49"
+	 a:e3_has_uid="49"
+	 a:up_fraction="1">
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#29"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#35"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:connection_element>
+<a:end_stimulus rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#50"
+	 a:e3_has_name="es50"
+	 a:e3_has_uid="50">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#52"/>
+</a:end_stimulus>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#52"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce52"
+	 a:e3_has_uid="52"
+	 a:up_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#41"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#50"/>
+</a:connection_element>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#53"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce53"
+	 a:e3_has_uid="53"
+	 a:up_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#45"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#76"/>
+</a:connection_element>
+<a:value_object rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#55"
+	 a:e3_has_name="Customer Satisfaction"
+	 a:e3_has_uid="55">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_object>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#56"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="InterconnectionFee"
+	 a:e3_has_uid="56">
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#26"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#31"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#57"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Interconnection"
+	 a:e3_has_uid="57">
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#25"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#32"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_exchange>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#58"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce58"
+	 a:e3_has_uid="58"
+	 a:up_fraction="1">
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#27"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#48"/>
+</a:connection_element>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#59"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce59"
+	 a:e3_has_uid="59"
+	 a:up_fraction="1">
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#106"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#23"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:connection_element>
+<a:elementary_actor rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#6"
+	 a:e3_has_name="Provider A"
+	 a:e3_has_uid="6">
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#106"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#23"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#27"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#64"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#83"/>
+	<a:e3_has_formula>EXPENSES=0</a:e3_has_formula>
+	<a:e3_has_formula>INVESTMENT=0</a:e3_has_formula>
+</a:elementary_actor>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#60"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="60">
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#14"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#41"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#61"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="61">
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#12"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#41"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#62"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="62">
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#16"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#9"/>
+</a:value_offering>
+<a:value_object rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#63"
+	 a:e3_has_name="Service"
+	 a:e3_has_uid="63">
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#11"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#12"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#15"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#16"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#21"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#25"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#32"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#33"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#34"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#78"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#81"/>
+	<a:vo_offered_requested_by_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#89"/>
+</a:value_object>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#64"
+	 a:e3_has_name="vi64"
+	 a:e3_has_uid="64">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#44"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#98"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#99"/>
+</a:value_interface>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#65"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="65">
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#15"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#9"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#66"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="66">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#19"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#47"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#67"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="67">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#19"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#21"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#68"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="68">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#23"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#26"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#69"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce69"
+	 a:e3_has_uid="69"
+	 a:up_fraction="1">
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#1"/>
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#19"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:connection_element>
+<a:connection_element rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#70"
+	 a:down_fraction="1"
+	 a:e3_has_name="ce70"
+	 a:e3_has_uid="70"
+	 a:up_fraction="334">
+	<a:ce_with_up_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#1"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ce_with_down_de rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#9"/>
+</a:connection_element>
+<a:value_transaction rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#73"
+	 a:e3_has_name="27IOT1"
+	 a:e3_has_uid="73"
+	 a:vt_has_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_transaction>
+<a:value_transaction rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#74"
+	 a:e3_has_name="64IOT1"
+	 a:e3_has_uid="74"
+	 a:vt_has_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_transaction>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#75"
+	 a:e3_has_formula="VALUATION=5"
+	 a:e3_has_name="vp49"
+	 a:e3_has_uid="75"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="5">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#82"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#99"/>
+</a:value_port>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#76"
+	 a:e3_has_name="vi76"
+	 a:e3_has_uid="76">
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#116"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#117"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#22"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#53"/>
+</a:value_interface>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#78"
+	 a:e3_has_formula="VALUATION=0"
+	 a:e3_has_name="vp73"
+	 a:e3_has_uid="78"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="0">
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#117"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#93"/>
+</a:value_port>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#79"
+	 a:e3_has_formula="EXPENSES=10"
+	 a:e3_has_name="vp76"
+	 a:e3_has_uid="79"
+	 a:vp_has_dir="true">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#116"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#94"/>
+</a:value_port>
+<a:elementary_actor rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#8"
+	 a:e3_has_name="Provider B"
+	 a:e3_has_uid="8">
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#29"/>
+	<a:ac_has_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#35"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:e3_has_formula>EXPENSES=0</a:e3_has_formula>
+	<a:e3_has_formula>INVESTMENT=0</a:e3_has_formula>
+</a:elementary_actor>
+<a:value_transaction rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#80"
+	 a:e3_has_name="29IOT1"
+	 a:e3_has_uid="80"
+	 a:vt_has_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_transaction>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#81"
+	 a:e3_has_name="vp63"
+	 a:e3_has_uid="81"
+	 a:vp_has_dir="true">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#86"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#98"/>
+</a:value_port>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#82"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Payment"
+	 a:e3_has_uid="82">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#47"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#75"/>
+</a:value_exchange>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#83"
+	 a:e3_has_name="vi83"
+	 a:e3_has_uid="83">
+	<a:de_down_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#160"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#6"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#96"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#97"/>
+</a:value_interface>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#85"
+	 a:e3_has_formula="VALUATION=10"
+	 a:e3_has_name="vp82"
+	 a:e3_has_uid="85"
+	 a:vp_has_dir="false"
+	 a:vp_valuation="10">
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#0"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_in_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#94"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#97"/>
+</a:value_port>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#86"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Get sim with credit"
+	 a:e3_has_uid="86">
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#21"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#81"/>
+</a:value_exchange>
+<a:value_transaction rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#87"
+	 a:e3_has_name="35IOT1"
+	 a:e3_has_uid="87"
+	 a:vt_has_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_transaction>
+<a:value_transaction rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#88"
+	 a:e3_has_name="76IOT1"
+	 a:e3_has_uid="88"
+	 a:vt_has_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_transaction>
+<a:value_port rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#89"
+	 a:e3_has_formula="EXPENSES=0"
+	 a:e3_has_name="vp83"
+	 a:e3_has_uid="89"
+	 a:vp_has_dir="true">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vp_requests_offers_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#63"/>
+	<a:vp_out_connects_ve rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#93"/>
+	<a:vp_in_vo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#96"/>
+</a:value_port>
+<a:value_interface rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#9"
+	 a:e3_has_name="vi9"
+	 a:e3_has_uid="9">
+	<a:vi_assigned_to_ac rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#2"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#62"/>
+	<a:vi_consists_of_of rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#65"/>
+	<a:de_up_ce rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#70"/>
+</a:value_interface>
+<a:value_transaction rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#90"
+	 a:e3_has_name="100IOT1"
+	 a:e3_has_uid="90"
+	 a:vt_has_fraction="1">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_transaction>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#91"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="91">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#23"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#25"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#92"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="92">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#27"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#34"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#93"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Service"
+	 a:e3_has_uid="93">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#78"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#89"/>
+</a:value_exchange>
+<a:value_exchange rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#94"
+	 a:e3_has_formula="CARDINALITY=1"
+	 a:e3_has_name="Payment"
+	 a:e3_has_uid="94">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:ve_has_out_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#79"/>
+	<a:ve_has_in_po rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#85"/>
+</a:value_exchange>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#95"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="95">
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#27"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#33"/>
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#96"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="96">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#83"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#89"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#97"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="97">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#83"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#85"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#98"
+	 a:e3_has_name="out"
+	 a:e3_has_uid="98">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#64"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#81"/>
+</a:value_offering>
+<a:value_offering rdf:about="http://www.cs.vu.nl/~gordijn/Scenario 2#99"
+	 a:e3_has_name="in"
+	 a:e3_has_uid="99">
+	<a:mc_in_di rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#37"/>
+	<a:mc_in_mo rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#4"/>
+	<a:vo_in_vi rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#64"/>
+	<a:vo_consists_of_vp rdf:resource="http://www.cs.vu.nl/~gordijn/Scenario 2#75"/>
+</a:value_offering>
+</rdf:RDF>
