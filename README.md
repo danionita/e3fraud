@@ -38,7 +38,7 @@ This allows listing misuse scenario per attacker.
 ## Visualization
 The ranked list of generated sub-ideal models can be viewed as textual descriptions. If grouping was used, the list is nested. This facilitates the exploration of the state space.
 
-The financial results of the ideal models or any of the sub-ideal modes can also be visualized as a 2D plot, as can be seen in Figure~\ref{screenshot}. 
+The financial results of the ideal models or any of the sub-ideal modes can also be visualized as a 2D plot with the desiered usage indicator on the X-axis and financial result on the Y-axis
 
 Both kinds of representations can be used by marketers and product managers without having to learn \emph{e3value} or \emph{e3fraud}.
 The results can be used to quantitatively asses the impact of the risk (in terms of loss for the ToA), the likelihood of the risk (in terms of gain for secondary actors) as well as the evolution of these factors across a given usage range. 
