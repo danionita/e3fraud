@@ -27,14 +27,19 @@ The transfers take values ranging between zero and  expected profitability of th
 
 ## 	Ranking 
 Depending on the complexity of the initial ideal model, hundreds of even thousands of models might be generated. Most of these might not describe a profitable or feasible fraud or misuse scenario. 
+
 To aid with selection and prioritization, the tool provides several ways of ranking and grouping the set of generated models.The prioritization is always carried out from the perspective of a single actor (the Target of Assessment), as described below.
+
 The software tool allows ranking based on Loss (for the ToA), Gain (defined as the difference between the financial result of a secondary actor in the ideal case versus the sub-ideal case) and Loss+Gain (where both these factors are combined into a hybrid measure).
+
 Furthermore, to allow for "what-if" analyses and easier navigation through the long list of sub-ideal models, results can be grouped (and collapsed) based who is colluding with who. 
 This allows listing misuse scenario per attacker.
 
 ## Visualization
 The ranked list of generated sub-ideal models can be viewed as textual descriptions. If grouping was used, the list is nested. This facilitates the exploration of the state space.
+
 The financial results of the ideal models or any of the sub-ideal modes can also be visualized as a 2D plot, as can be seen in Figure~\ref{screenshot}. 
+
 Both kinds of representations can be used by marketers and product managers without having to learn \emph{e3value} or \emph{e3fraud}.
 The results can be used to quantitatively asses the impact of the risk (in terms of loss for the ToA), the likelihood of the risk (in terms of gain for secondary actors) as well as the evolution of these factors across a given usage range. 
 The user may select which usage indicator to be represented on the X-axis, as well as its range.
