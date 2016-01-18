@@ -144,7 +144,7 @@ int STEPS = 3;
             //Create an empty model
             Model model = ModelFactory.createDefaultModel();
             model.add(baseModel.getJenaModel());
-            E3Model generatedModel = new E3Model(model, baseModel.getDescription());
+            E3Model generatedModel = new E3Model(model, baseModel);
 
             //just in case previous method did not change anything(if this method was called directly, instead of calling generateAll)
             if (generatedModel.getDescription().equals("Base Model")) {
@@ -188,7 +188,7 @@ int STEPS = 3;
                 //Create an empty model
                 Model model = ModelFactory.createDefaultModel();
                 model.add(baseModel.getJenaModel());
-                E3Model generatedModel = new E3Model(model, baseModel.getDescription());
+                E3Model generatedModel = new E3Model(model, baseModel);
 
                 //just in case previous method did not change anything(if this method was called directly, instead of calling generateAll)
                 if (generatedModel.getDescription().equals("Base Model") || generatedModel.getDescription().equals("No collusion")) {
@@ -277,7 +277,7 @@ int STEPS = 3;
                             //Create an empty model
                             Model model = ModelFactory.createDefaultModel();
                             model.add(baseModel.getJenaModel());
-                            E3Model generatedModel = new E3Model(model, baseModel.getDescription());
+                            E3Model generatedModel = new E3Model(model, baseModel);
                             //System.out.println("\t\t\t\t\t adding a hidden transfer of "+ value+ " between \""+ actor1.getProperty(E3value.e3_has_name).getLiteral().toString() + "\" and \""+ actor2.getProperty(E3value.e3_has_name).getLiteral().toString()+ "\"");     
                     
                             //just in case previous method did not change anything (if this method was called directly, instead of calling generateAll)
@@ -306,7 +306,7 @@ int STEPS = 3;
                             //Create an empty model
                             Model model = ModelFactory.createDefaultModel();
                             model.add(baseModel.getJenaModel());
-                            E3Model generatedModel = new E3Model(model, baseModel.getDescription());
+                            E3Model generatedModel = new E3Model(model, baseModel);
 
                             //just in case previous method did not change anything (if this method was called directly, instead of calling generateAll)
                             if (generatedModel.getDescription().equals("Base Model")) {

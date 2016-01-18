@@ -342,22 +342,21 @@ public class MainWindow extends JPanel
                                 }
                             };
                             this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                            progressBar.setVisible(true);          
-                            progressBar.setIndeterminate(true);                                              
+                            progressBar.setVisible(true);
+                            progressBar.setIndeterminate(true);
                             progressBar.setString("generating...");
                             generationWorker.addPropertyChangeListener(
                                     new PropertyChangeListener() {
-                                        public void propertyChange(PropertyChangeEvent evt) {
-                                            if ("phase".equals(evt.getPropertyName())){
-                                            progressBar.setMaximum(100);
-                                            progressBar.setIndeterminate(false);  
-                                            progressBar.setString("ranking...");
-                                            }
-                                            else if ("progress".equals(evt.getPropertyName())) {                          
-                                                progressBar.setValue((Integer) evt.getNewValue());
-                                            }
-                                        }
-                                    });
+                                public void propertyChange(PropertyChangeEvent evt) {
+                                    if ("phase".equals(evt.getPropertyName())) {
+                                        progressBar.setMaximum(100);
+                                        progressBar.setIndeterminate(false);
+                                        progressBar.setString("ranking...");
+                                    } else if ("progress".equals(evt.getPropertyName())) {
+                                        progressBar.setValue((Integer) evt.getNewValue());
+                                    }
+                                }
+                            });
                             generationWorker.execute();
                         }
                     }
@@ -379,6 +378,7 @@ public class MainWindow extends JPanel
                     @Override
                     protected void done() {
                         try {
+                            progressBar.setVisible(false);
                             //the Worker's result is retrieved
                             treeModel.setRoot(get());
                             tree.setModel(treeModel);
@@ -390,12 +390,27 @@ public class MainWindow extends JPanel
                         } catch (InterruptedException | ExecutionException ex) {
                             Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
                             setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                            log.append("ERROR! Most likely out of memory; please increase heap size of JVM");
+                            log.append("Most likely out of memory; please increase heap size of JVM");
                             PopUps.infoBox("Encountered an error. Most likely out of memory; try increasing the heap size of JVM", "Error");
                         }
                     }
                 };
                 setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                progressBar.setVisible(true);
+                progressBar.setIndeterminate(true);
+                progressBar.setString("generating...");
+                generationWorker.addPropertyChangeListener(
+                        new PropertyChangeListener() {
+                    public void propertyChange(PropertyChangeEvent evt) {
+                        if ("phase".equals(evt.getPropertyName())) {
+                            progressBar.setMaximum(100);
+                            progressBar.setIndeterminate(false);
+                            progressBar.setString("ranking...");
+                        } else if ("progress".equals(evt.getPropertyName())) {
+                            progressBar.setValue((Integer) evt.getNewValue());
+                        }
+                    }
+                });
                 generationWorker.execute();
 
             } else {

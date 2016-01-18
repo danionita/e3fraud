@@ -17,6 +17,7 @@
 package e3fraud.model;
 
 import com.hp.hpl.jena.rdf.model.Resource;
+import e3fraud.vocabulary.E3value;
 import static java.lang.Math.max;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -31,7 +32,6 @@ import javax.swing.SwingWorker;
  */
 public class ModelRanker {
 
-    
     /**
      * Simply transforms the Set of models into an ordered List of models,
      * ranked by loss of actor
@@ -41,13 +41,13 @@ public class ModelRanker {
      * @return a sorted list from highest to lowest loss for Actor
      */
     public static List<E3Model> sortByLoss(SwingWorker worker, Set<E3Model> models, Resource actor) {
-        int total= models.size();
-        int i=0;        
+        int total = models.size();
+        int i = 0;
 //make sure all models are enhanced                               
         for (E3Model modelToCompare : models) {
             modelToCompare.enhance();
         }
-        
+
         List<E3Model> sortedList = new ArrayList<>();
         for (E3Model modelToPlace : models) {
 
@@ -75,10 +75,10 @@ public class ModelRanker {
                     //System.out.println("ADDED ANOTHER MODEL TO botton of the  LIST");   
                 }
             }
-            
-            if(worker!=null){
-            worker.firePropertyChange("progress", 100*(i-1)/total, 100*i/total);
-            i++;
+
+            if (worker != null) {
+                worker.firePropertyChange("progress", 100 * (i - 1) / total, 100 * i / total);
+                i++;
             }
         }
         return sortedList;
@@ -99,13 +99,13 @@ public class ModelRanker {
      * @return a sorted list from highest to lowest loss for Actor
      */
     public static List<E3Model> sortByLoss(SwingWorker worker, Set<E3Model> models, Resource actor, Resource need, int startValue, int endValue, boolean ideal) {
-               int total= models.size();
-        int i=0;
+        int total = models.size();
+        int i = 0;
         //make sure all models are enhanced                               
         for (E3Model modelToCompare : models) {
             modelToCompare.enhance();
         }
-        
+
         List<E3Model> sortedList = new ArrayList<>();
         for (E3Model modelToPlace : models) {
             //we only need one average (for actor) for calculating loss
@@ -136,9 +136,9 @@ public class ModelRanker {
                     //System.out.println("ADDED ANOTHER MODEL TO botton of the  LIST");   
                 }
             }
-            if(worker!=null){
-            worker.firePropertyChange("progress", 100*(i-1)/total, 100*i/total);
-            i++;
+            if (worker != null) {
+                worker.firePropertyChange("progress", 100 * (i - 1) / total, 100 * i / total);
+                i++;
             }
         }
         return sortedList;
@@ -159,8 +159,8 @@ public class ModelRanker {
      * @return a sorted list from highest to lowest loss for Actor
      */
     public static List<E3Model> sortByGain(SwingWorker worker, E3Model baseModel, Set<E3Model> models, Resource actor, Resource need, int startValue, int endValue, boolean ideal) {
-        int total= models.size();
-        int i=0;
+        int total = models.size();
+        int i = 0;
         //make sure all models are enhanced                               
         for (E3Model modelToCompare : models) {
             modelToCompare.enhance();
@@ -172,46 +172,43 @@ public class ModelRanker {
         //for each model
         for (E3Model modelToPlace : models) {
             Map<Resource, Double> modelToPlaceAverages = modelToPlace.getAveragesForActors(need, startValue, endValue, ideal);
-            //if the list is empty
+            //First, find the actor with the largest Delta gain in the model to place
+            double gainDeltaToPlace = -Double.MAX_VALUE;
+            for (Resource actorInModelToPlace : modelToPlace.getActors()) {
+                //If it is a colluded actor
+                if (actorInModelToPlace.getURI().equals(modelToPlace.newActorURI)) {
+                    Resource colludedActor = baseModel.getJenaModel().getResource(modelToPlace.colludedActorURI);
+                    //deduct the base profit of both actors                    
+                    double delta = modelToPlaceAverages.get(actorInModelToPlace) - baseModelAverages.get(actorInModelToPlace) - baseModelAverages.get(colludedActor);
+                    gainDeltaToPlace = max(gainDeltaToPlace, delta);
+                 } else if(!actorInModelToPlace.getURI().equals(actor.getURI())){
+                    //otherwise, deduct the base profit
+                    double delta = modelToPlaceAverages.get(actorInModelToPlace) - baseModelAverages.get(actorInModelToPlace);
+                    gainDeltaToPlace = max(gainDeltaToPlace, delta);                    
+                  }
+            }
+            modelToPlace.setLastKnownTopDelta(gainDeltaToPlace);
+            
+            //If the list is empty
             if (sortedList.isEmpty()) {
                 //add it directly
                 //System.out.println("ADDED FIRST MODEL TO THE LIST");
                 sortedList.add(modelToPlace);
             //otherwise
             } else {
+                //For each model already in the sorted list     
                 Iterator<E3Model> iterator = sortedList.listIterator();
-                //for each model already in the sorted list
                 while (iterator.hasNext()) {
-                    //check it's average
                     E3Model modelInList = iterator.next();
-                    Map<Resource, Double> modelInListAverages = modelInList.getLastKnownAverages();
-                    //sort by delta of gain of other actors                    
-                        //check if any actor has higher gain DELTA (!)
-                        double gainDeltaToPlace = -Double.MAX_VALUE;
-                        double gainDeltaInList = -Double.MAX_VALUE;
-                        for (Resource actorInModelToPlace : modelToPlace.getActors()) {
-                            if (actorInModelToPlace.getURI().equals(modelToPlace.newActorURI)) {
-                                Resource colludedActor = baseModel.getJenaModel().getResource(modelToPlace.colludedActorURI);
-                                gainDeltaToPlace = max(gainDeltaToPlace, modelToPlaceAverages.get(actorInModelToPlace) - baseModelAverages.get(actorInModelToPlace) - baseModelAverages.get(colludedActor));
-                            } else {
-                                gainDeltaToPlace = max(gainDeltaToPlace, modelToPlaceAverages.get(actorInModelToPlace) - baseModelAverages.get(actorInModelToPlace));
-                            }
-                        }
-                        for (Resource actorInModelInList : modelInList.getActors()) {
-                            if (actorInModelInList.getURI().equals(modelToPlace.newActorURI)) {
-                                Resource colludedActor = baseModel.getJenaModel().getResource(modelToPlace.colludedActorURI);
-                                gainDeltaInList = max(gainDeltaInList, modelInListAverages.get(actorInModelInList) - baseModelAverages.get(actorInModelInList) - baseModelAverages.get(colludedActor));
-                            } else {
-                                gainDeltaInList = max(gainDeltaInList, modelInListAverages.get(actorInModelInList) - baseModelAverages.get(actorInModelInList));
-                            }
-                        }
-                        if (gainDeltaToPlace > gainDeltaInList) {
-                                    //and add it right before it
-                            //System.out.println("Found lower gain. ADDED ANOTHER MODEL TO THE LIST");
-                            sortedList.add(sortedList.indexOf(modelInList), modelToPlace);
-                            break;
-                        }
-                    
+                    double gainDeltaInList = modelInList.getLastKnownTopDelta();
+                    //If the top delta of the model to place is higher than the one in the list
+                    if (gainDeltaToPlace > gainDeltaInList) {
+                        //add the model to place it right before the model in the list
+                        //System.out.println("Found lower gain. ADDED ANOTHER MODEL TO THE LIST");
+                        sortedList.add(sortedList.indexOf(modelInList), modelToPlace);
+                        break;
+                    }
+
                 }
                 //otherwise add it last
                 if (!sortedList.contains(modelToPlace)) {
@@ -220,17 +217,15 @@ public class ModelRanker {
 
                 }
             }
-            if(worker!=null){
-            worker.firePropertyChange("progress", 100*(i-1)/total, 100*i/total);
-            i++;
+            if (worker != null) {
+                worker.firePropertyChange("progress", 100 * (i - 1) / total, 100 * i / total);
+                i++;
             }
         }
+               
         return sortedList;
     }
 
-    
-    
-    
     /**
      * Transforms the Set of models into an ordered List of models, ranked by
      * average loss of given actor across a specified interval of occurrence of
@@ -249,8 +244,8 @@ public class ModelRanker {
      * @return a sorted list from highest to lowest loss for Actor
      */
     public static List<E3Model> sortByLossandGain(SwingWorker worker, E3Model baseModel, Set<E3Model> models, Resource actor, Resource need, int startValue, int endValue, boolean ideal) {
-                int total= models.size();
-        int i=0;
+        int total = models.size();
+        int i = 0;
         //make sure all models are enhanced                               
         for (E3Model modelToCompare : models) {
             modelToCompare.enhance();
@@ -291,20 +286,20 @@ public class ModelRanker {
                             if (actorInModelToPlace.getURI().equals(modelToPlace.newActorURI)) {
                                 Resource colludedActor = baseModel.getJenaModel().getResource(modelToPlace.colludedActorURI);
                                 gainDeltaToPlace = max(gainDeltaToPlace, modelToPlaceAverages.get(actorInModelToPlace) - baseModelAverages.get(actorInModelToPlace) - baseModelAverages.get(colludedActor));
-                            } else {
+                            } else if(!actorInModelToPlace.getURI().equals(actor.getURI())){
                                 gainDeltaToPlace = max(gainDeltaToPlace, modelToPlaceAverages.get(actorInModelToPlace) - baseModelAverages.get(actorInModelToPlace));
                             }
                         }
                         for (Resource actorInModelInList : modelInList.getActors()) {
-                            if (actorInModelInList.getURI().equals(modelToPlace.newActorURI)) {
-                                Resource colludedActor = baseModel.getJenaModel().getResource(modelToPlace.colludedActorURI);
+                            if (actorInModelInList.getURI().equals(modelInList.newActorURI)) {
+                                Resource colludedActor = baseModel.getJenaModel().getResource(modelInList.colludedActorURI);
                                 gainDeltaInList = max(gainDeltaInList, modelInListAverages.get(actorInModelInList) - baseModelAverages.get(actorInModelInList) - baseModelAverages.get(colludedActor));
-                            } else {
+                            } else  if(!actorInModelInList.getURI().equals(actor.getURI())){
                                 gainDeltaInList = max(gainDeltaInList, modelInListAverages.get(actorInModelInList) - baseModelAverages.get(actorInModelInList));
                             }
                         }
                         if (gainDeltaToPlace > gainDeltaInList) {
-                                    //and add it right before it
+                            //and add it right before it
                             //System.out.println("Found lower gain. ADDED ANOTHER MODEL TO THE LIST");
                             sortedList.add(sortedList.indexOf(modelInList), modelToPlace);
                             break;
@@ -318,14 +313,12 @@ public class ModelRanker {
 
                 }
             }
-            if(worker!=null){
-            worker.firePropertyChange("progress", 100*(i-1)/total, 100*i/total);
-            i++;
+            if (worker != null) {
+                worker.firePropertyChange("progress", 100 * (i - 1) / total, 100 * i / total);
+                i++;
             }
         }
         return sortedList;
     }
 
-    
-    
 }

@@ -46,18 +46,43 @@ public class E3Model {
     public String colludedActorURI;
     public String newActorURI;
     
-    //the following are needed to save time on calcualting the average everytime when sorting 
+    //the following are needed to save time on calcualting the averages and deltas everytime when sorting 
     private double lastKnownAverage;    
     private Map<Resource, Double> lastKnownAverages;
+    private double lastKnownTopDelta;
+    private Resource topDeltaActor;
+
+    public Resource getTopDeltaActor() {
+        return topDeltaActor;
+    }
+
+    public void setTopDeltaActor(Resource topDeltaActor) {
+        this.topDeltaActor = topDeltaActor;
+    }
+
+    public double getLastKnownTopDelta() {
+        return lastKnownTopDelta;
+    }
+
+    public void setLastKnownTopDelta(double lastKnownTopDelta) {
+        this.lastKnownTopDelta = lastKnownTopDelta;
+    }
 
     public E3Model(Model jenaModel) {
         this.model = jenaModel;
         this.description = "Base Model";
     }
 
-    public E3Model(Model jenaModel, String description) {
+    /**
+     * 
+     * @param jenaModel the jena model to include
+     * @param baseModel the E3model to take description and collusion info from 
+     */
+    public E3Model(Model jenaModel, E3Model baseModel) {
         this.model = jenaModel;
-        this.description = description;
+        this.description = baseModel.getDescription();
+        this.colludedActorURI = baseModel.colludedActorURI;
+        this.newActorURI = baseModel.newActorURI;
     }
 
     /**

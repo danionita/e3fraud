@@ -89,7 +89,6 @@ DecimalFormat df = new DecimalFormat("#.##");
         publish(currentTime.currentTime() + " Generating sub-ideal models...." + newline);
         SubIdealModelGenerator subIdealModelGenerator = new SubIdealModelGenerator();
 
-        
         //grouped case
         if (groupingButton.isSelected()) {
             int size = 0;
