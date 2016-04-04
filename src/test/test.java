@@ -18,13 +18,10 @@ package test;
 
 import com.hp.hpl.jena.rdf.model.Resource;
 import e3fraud.model.E3Model;
-import e3fraud.model.ModelRanker;
-import e3fraud.model.SubIdealModelGenerator;
 import e3fraud.parser.FileParser;
 import e3fraud.vocabulary.E3value;
 import java.io.File;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import org.jfree.data.xy.XYSeries;

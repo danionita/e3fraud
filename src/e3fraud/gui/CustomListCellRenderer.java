@@ -34,8 +34,8 @@ import javax.swing.ListCellRenderer;
  */
 class CustomListCellRenderer extends JPanel implements ListCellRenderer {
 
-    private Color selectionBackground;
-    private Color background;
+    private final Color selectionBackground;
+    private final Color background;
 
     public CustomListCellRenderer(JList list) {
         selectionBackground = list.getSelectionBackground();
@@ -82,7 +82,7 @@ class CustomListCellRenderer extends JPanel implements ListCellRenderer {
         return panel;
     }
     
-    public class ListSeparator {
+    public static class ListSeparator {
     
 }
 }

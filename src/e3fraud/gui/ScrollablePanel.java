@@ -333,8 +333,8 @@ public class ScrollablePanel extends JPanel
 	 */
 	static class IncrementInfo
 	{
-		private IncrementType type;
-		private int amount;
+		private final IncrementType type;
+		private final int amount;
 
 		public IncrementInfo(IncrementType type, int amount)
 		{

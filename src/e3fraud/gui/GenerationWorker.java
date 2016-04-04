@@ -33,7 +33,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import javax.swing.JCheckBox;
-import javax.swing.JProgressBar;
 import javax.swing.JRadioButton;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;
@@ -52,12 +51,12 @@ public class GenerationWorker extends SwingWorker<DefaultMutableTreeNode, String
     private final int startValue;
     private final int endValue;
     private final JTextArea log;
-    private final JRadioButton lossButton, gainButton, lossGainButton, gainLossButton;
+    private final JRadioButton lossButton, gainButton, lossGainButton;
     private final JSpinner collusionsButton;
     private final JCheckBox groupingButton;
     private java.util.List<E3Model> sortedSubIdealModels;
-    private java.util.HashMap<String, java.util.Set<E3Model>> groupedSubIdealModels;
-    private DefaultMutableTreeNode root;
+    private final java.util.HashMap<String, java.util.Set<E3Model>> groupedSubIdealModels;
+    private final DefaultMutableTreeNode root;
     private int numberOfSubIdealModels;
     int i;
     
@@ -74,7 +73,6 @@ public class GenerationWorker extends SwingWorker<DefaultMutableTreeNode, String
         this.lossButton = lossButton;
         this.gainButton = gainButton;
         this.lossGainButton = lossGainButton;
-        this.gainLossButton = gainLossButton;
         this.groupingButton = groupingButton;
         this.sortedSubIdealModels = null;
         this.root = new DefaultMutableTreeNode("root");
@@ -103,7 +101,6 @@ DecimalFormat df = new DecimalFormat("#.##");
                 Set<E3Model> hiddenAndNonOccuringModels = new HashSet<>();
                 Set<E3Model> intermediaryModels = new HashSet<>();
                 Set<E3Model> subIdealModels = new HashSet<>();
-                Set<E3Model> hiddenModels = new HashSet<>();
                 String category;
                 //create a category for it
                 if (model.getDescription().equals("Base Model")) {

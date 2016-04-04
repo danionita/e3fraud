@@ -29,8 +29,6 @@ import javax.swing.JFrame;
 import e3fraud.model.E3Model;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import org.apache.jena.riot.Lang;
-import org.apache.jena.riot.RDFDataMgr;
 
 
 /**

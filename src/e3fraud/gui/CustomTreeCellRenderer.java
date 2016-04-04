@@ -39,9 +39,9 @@ import javax.swing.tree.TreeCellRenderer;
  */
 class CustomTreeCellRenderer extends JPanel implements TreeCellRenderer {
 
-    private Color selectionBackground;
-    private Color background;
-    private JTree tree;
+    private final Color selectionBackground;
+    private final Color background;
+    private final JTree tree;
 
     public CustomTreeCellRenderer(JTree tree) {
         DefaultTreeCellRenderer renderer = new DefaultTreeCellRenderer();

@@ -23,7 +23,7 @@ import com.hp.hpl.jena.rdf.model.*;
  */
 public class E3value {
     /** <p>The RDF model that holds the vocabulary terms</p> */
-    private static Model m_model = ModelFactory.createDefaultModel();
+    private static final Model m_model = ModelFactory.createDefaultModel();
     
     /** <p>The namespace of the vocabulary as a string</p> */
     public static final String NS = "http://www.cs.vu.nl/~gordijn/e3value#";

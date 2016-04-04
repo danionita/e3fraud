@@ -17,7 +17,6 @@
 package e3fraud.model;
 
 import com.hp.hpl.jena.rdf.model.Resource;
-import e3fraud.vocabulary.E3value;
 import static java.lang.Math.max;
 import java.util.ArrayList;
 import java.util.Iterator;

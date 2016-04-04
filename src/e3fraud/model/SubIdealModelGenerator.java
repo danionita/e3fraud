@@ -20,7 +20,6 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import e3fraud.vocabulary.E3value;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Iterator;

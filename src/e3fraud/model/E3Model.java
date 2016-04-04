@@ -1144,7 +1144,7 @@ return description;
         Map<Resource, Double> averagesMap = new HashMap<>();
         Map<Resource, XYSeries> seriesMap = getTotalForActors(need, startValue, endValue, ideal);
         
-        for(Resource actor:seriesMap.keySet()){    
+        for(Resource actor : seriesMap.keySet()){    
             double sum = 0;
         for (Object dataItemObject : seriesMap.get(actor).getItems()){
             XYDataItem dataItem = (XYDataItem) dataItemObject;

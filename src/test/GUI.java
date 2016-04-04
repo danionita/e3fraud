@@ -5,7 +5,7 @@
 package test
 ;
 
-import e3fraud.*;
+
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import e3fraud.gui.MainWindow;

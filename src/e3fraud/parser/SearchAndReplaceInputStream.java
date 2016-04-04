@@ -28,9 +28,9 @@ import java.io.InputStream;
  */
 public class SearchAndReplaceInputStream extends InputStream {
 
-    private InputStream is;
-    private char[] search;
-    private char[] replace;
+    private final InputStream is;
+    private final char[] search;
+    private final char[] replace;
     private int len, pos, idx;
     private char ch, buf[];
 
