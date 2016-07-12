@@ -42,11 +42,6 @@ import javax.swing.tree.TreeSelectionModel;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.ChartPanel;
 
-/*
- * FileChooserDemo.java uses these files:
- *   images/Open16.gif
- *   images/Save16.gif
- */
 public class MainWindow extends JPanel
         implements ActionListener {
 
